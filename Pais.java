@@ -7,7 +7,19 @@ public class Pais {
 	public double areaPais;
 
 	public Pais() {
+	}
 
+	@Override
+	public String toString() {
+		return "Pais [idPais=" + idPais + ", nomePais=" + nomePais + ", populacaoPais=" + populacaoPais + ", areaPais=" 
+				+ areaPais + "]";
+	}
+
+	public Pais(int idPais, String nomePais, long populacaoPais, double areaPais) {
+		this.idPais = idPais;
+		this.nomePais = nomePais;
+		this.populacaoPais = populacaoPais;
+		this.areaPais = areaPais;
 	}
 
 	public int getIdPais() {
